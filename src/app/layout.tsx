@@ -1,6 +1,8 @@
 import { type Metadata } from 'next'
 import { DM_Sans, Inter } from 'next/font/google'
 import clsx from 'clsx'
+import { PrismicPreview } from '@prismicio/next'
+import { repositoryName } from '@/prismicio'
 
 import '@/styles/tailwind.css'
 
@@ -42,6 +44,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full">
         <div className="flex w-full flex-col">{children}</div>
+        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   )

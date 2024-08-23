@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@headlessui/react": "^2.1.0",
     "@headlessui/tailwindcss": "^0.2.0",
+    "@prismicio/client": "^7.8.0",
+    "@prismicio/next": "^1.6.0",
+    "@prismicio/react": "^2.8.0",
     "@types/node": "^20.10.8",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
@@ -24,10 +28,12 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.46",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "sharp": "0.33.1"
+    "sharp": "0.33.1",
+    "slice-machine-ui": "^2.5.0"
   }
 }
